@@ -1,0 +1,327 @@
+html {
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+h5,
+h4  {
+  font-size: 1rem;
+  font-family: helvetica;
+  color: white;
+}
+
+p {
+  font-size: 1rem;
+  font-family: helvetica;
+}
+
+.header {
+  background-image: url("./../images/main.png");
+  display: block;
+  height: 30rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+.header-bar {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  width: 100%;
+  align-items: center;
+}
+
+.header-container {
+  background-color: cadetblue;
+  max-width: 960px;
+  display: flex;
+  margin: auto;
+  position: relative;
+  top: 1rem;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+.white-logo {
+  margin-left: 2rem;
+  margin-right: 1rem;
+  display: block;
+}
+
+.white-logo img {
+  height: 1.5rem;
+}
+
+.nav-list {
+  margin-right: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.nav {
+  display: block;
+}
+
+.nav-list {
+  display: inline-block;
+}
+
+.caption-container {
+  max-width: 960px;
+  margin: auto;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  top: 10rem;
+}
+
+.hidden {
+  flex-grow: 1;
+  visibility: hidden;
+}
+.caption {
+  font-size: 2rem;
+  font-family: helvetica;
+  font-weight: bold;
+  line-height: 1.2;
+  background-color: white;
+  text-align: center;
+  margin-right: -2rem;
+}
+
+.caption h1 {
+  padding: 1.5rem 5rem;
+}
+
+.features-container {
+  max-width: 960px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 3rem;
+}
+
+.features {
+  display: flex;
+  margin: auto;
+  height: 8rem;
+}
+
+.icons {
+  margin-left: 3rem;
+  margin-right: 3rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.icon img {
+  max-width: 5rem;
+}
+
+.icon {
+  margin: auto;
+  margin-top: 0px;
+}
+
+#paper {
+    max-width: 3.5rem;
+}
+
+.info-text {
+  text-align: center;
+}
+
+.philosophy,
+.appointments {
+  max-width: 35%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.about-container {
+  max-width: 960px;
+  position: relative;
+  top:6rem;
+  display: flex;
+  flex-wrap: nowrap;
+  margin: auto;
+}
+
+.subheading {
+  background-color: cadetblue;
+  width: 10rem;
+}
+
+.subheading h4 {
+  padding-left: 1.25rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-weight: bold;
+}
+.about {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+}
+
+.text {
+  position: relative;
+  top: 1rem;
+}
+
+.footer {
+  position: relative;
+  top: 8rem;
+  max-width: 960px;
+  margin: auto;
+  background-color: azure;
+}
+
+.footer-bar {
+  display: flex;
+  align-items: center;
+  padding-left: 4rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.black-logo {
+  margin-right: 1rem;
+}
+
+.black {
+  color: black;
+}
+
+.black-logo img {
+  height: 1.5rem;
+}
+
+@media only screen and (min-width:1024px) {
+  #hidden-menu {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width:470px) {
+
+.header-container {
+  position: static;
+  max-width: 100%;
+}
+
+.about-container,
+.footer,
+.features-container {
+  max-width: 100%;
+}
+
+.caption-container {
+  top: 5rem;
+}
+
+.caption {
+  position: relative;
+  right: 2rem;
+  margin-right: 0rem;
+}
+
+.caption h1 {
+  padding: 0.75rem 4rem 0.75rem 4rem;
+  font-size: 1.33rem;
+}
+.header {
+  height: 22rem;
+}
+
+#hidden-menu {
+  display: none;
+}
+
+
+}
+
+
+@media only screen and (max-width:470px) {
+
+#hidden-small,
+.title {
+  display: none;
+}
+
+.caption-container {
+  max-width: 100%;
+}
+
+.caption {
+  width: 100%;
+  top: 9rem;
+  margin: 0rem;
+}
+
+.caption h1 {
+  text-align: center;
+  padding: 1rem 0rem 1rem 0rem;
+  font-size: 1rem;
+}
+.header {
+  height: 17rem;
+  max-width: 100%;
+}
+
+.features {
+  display: block;
+  flex-direction: column;
+}
+
+.features-container {
+  position: relative;
+  top: 3.77rem;
+}
+
+.icons {
+  margin-bottom: 1.54rem
+}
+
+.about-container {
+  top: 19rem;
+  width:100%;
+}
+
+.subheading h4 {
+  font-size: 0.77rem;
+}
+
+.about {
+  display: block;;
+  flex-direction: column;
+}
+
+.philosophy,
+.appointments {
+  max-width: 100%;
+  margin: 0rem;
+  margin-bottom: 4rem;
+}
+
+.about-container {
+  width: 100%;
+}
+
+.footer {
+  top: 19rem;
+}
+
+.subheading {
+  width: 100%;
+}
+
+.text p {
+  font-size: 0.77rem;
+}
+
+}
